@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+}
+
+table th,
+table td {
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+table .controls {
+    display: flex;
+    margin: 5px -5px 3px -5px;
+}
+
+table .btn,
+table .input {
+    height: 25px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    box-shadow: rgb(0 0 0 / 2%) 0 1px 3px 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+table .btn {
+    width: 25px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: .2s box-shadow;
+}
+
+table .btn:hover {
+    box-shadow: 0 3px 6px -1px rgb(50 50 93 / 25%), 0 1px 3px -1px rgb(0 0 0 / 30%);
+}
+
+table .btn--asc {
+    background-image: url('img/asc-icon.png');
+}
+
+table .btn--desc {
+    background-image: url('img/desc-icon.png');
+}
+
+table .input {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+mark {
+    background-color: #ffff00;
+}
+
